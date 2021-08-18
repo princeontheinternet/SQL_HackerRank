@@ -26,7 +26,7 @@ SELECT
     CASE
         WHEN (A + B)>C AND (A + C)>B AND (B + C)>A THEN
         CASE
-            WHEN (A=B) AND (B=C) THEN 'Equilateral'
+            WHEN (A=B) AND (B=C) THEN 'Equilateral'		--A=B AND B=C, therefore indirectly A=C
             WHEN (A=B) OR (B=C) OR (A=C) THEN 'Isosceles'
 			--ELSE 'Scalene'
             WHEN (A<>B) AND (B<>C) AND (A<>C) THEN 'Scalene' 
